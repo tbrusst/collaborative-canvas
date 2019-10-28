@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Collaborative Canvas</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css" />
+
+   </head>
+   <body>
+
+
+
+     <div class="wrap">
+       <div class="textLeft">
+         <p>
+           DRAWING CANVAS
+         </p>
+       </div>
+
+       <div class="stripe"></div>
+
+       <div class="full">
+
+
+         <div class="hold" id="hold">
+           <canvas class="canvas" id="canvas"></canvas>
+         </div>
+
+         <div class="hold2" id="hold2">
+         </div>
+       </div>
+
+       <div class="textRight">
+         <p>
+           DRAW FROM A MOBILE DEVICE @ RUSSOCANVAS.HEROKUAPP.COM
+         </p>
+       </div>
+
+
+
+     <div class="picker">
+       <div class="colors">
+         <div onclick="colorChanger('#FFC94B')" id="c1" class="colorQ">E39380</div>
+         <div onclick="colorChanger('#E35E9F')" id="c2" class="colorQ">F3C3A0</div>
+         <div onclick="colorChanger('#D8332F')" id="c3" class="colorQ">E5C1BD</div>
+       </div>
+
+       <div class="color">
+         <div onclick="colorChanger('#2D65B0')" id="c4" class="colorQ">9BBEC9</div>
+         <div onclick="colorChanger('#5A4F9E')" id="c5" class="colorQ">1F2041</div>
+         <div onclick="colorChanger('#000000')" id="c6" class="colorQ">000000</div>
+
+       </div>
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+     <script src="/socket.io/socket.io.js"></script>
+     <script src="user.js"></script>
+     <script src="client.js"></script>
+
+
+   </body>
+</html>

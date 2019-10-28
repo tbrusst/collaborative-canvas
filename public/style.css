@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+*{
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #121212;
+  margin: 0;
+
+}
+.picker {
+  /*position: absolute;
+  bottom: 0px;*/
+
+}
+.color{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.colors{
+  margin-top: 20px;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto Mono', monospace;
+}
+.colorQ{
+  height: 50px;
+  width: 30%;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  padding: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#c1{
+  border-color: #FFC94B;
+  border-width: 10px;
+  border-top-style: solid;
+}
+#c2{
+  border-color: #E35E9F;
+  border-width: 10px;
+  border-top-style: solid;
+}
+#c3{
+  border-color: #D8332F;
+  border-width: 10px;
+  border-top-style: solid;
+}
+#c4{
+  border-color: #2D65B0;
+  border-width: 10px;
+  border-top-style: solid;
+}
+#c5{
+  border-color: #5A4F9E;
+  border-width: 10px;
+  border-top-style: solid;
+}
+#c6{
+  border-color: #000000;
+  border-width: 10px;
+  border-top-style: solid;
+}
+.stripe{
+  display: none;
+}
+.textLeft{
+  color: white;
+  display: none;
+  font-family: 'Roboto Mono', monospace;
+}
+.textRight{
+  color: white;
+  width: 100%;
+  font-family: sans-serif;
+  display:none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto Mono', monospace;
+}
+
+
+button {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+
+canvas {
+  background-color: white;
+  margin: 0 auto;
+
+
+
+}
+
+.twoCanvas {
+  display: none;
+}
+
+.threeCanvas {
+  display: none;
+
+}
+
+.fourCanvas {
+  display: none;
+
+}
+.sixCanvas {
+  display: none;
+
+}
+
+.fiveCanvas {
+  display: none;
+
+}
+.sevenCanvas {
+  display: none;
+
+}
+
+.eightCanvas {
+  display: none;
+
+}
+.tenCanvas {
+  display: none;
+
+}
+.nineCanvas {
+  display: none;
+
+}
+.elevenCanvas {
+  display: none;
+
+}
+.twelveCanvas {
+  display: none;
+
+}
+.hold {
+  background-color: #000000;
+  height: 300px;
+
+}
+
+@media (min-width: 500px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    background-image: url(collab.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .picker{
+    opacity: 0;;
+  }
+
+  .stripe{
+    display: block;
+    width: 100vw;
+    position: relative;
+    height: 5px;
+
+    background-color: white;
+    margin-bottom: 10px;
+  }
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .full {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .textLeft{
+    font-family: 'Roboto Mono', monospace;
+    position: relative;
+
+    color: white;
+    text-align: center;
+    width:100%;
+    display: block;
+  }
+  .textRight{
+    font-family: 'Roboto Mono', monospace;
+    position: relative;
+
+    color: white;
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  #hold {
+    background-color: white;
+    width: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #hold2 {
+    background-color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  #hold {
+    /*width: 100vw;
+    height: 100vh;*/
+    /*display: block;*/
+  }
+
+  canvas {
+
+    float: left;
+
+  }
+
+  .twoCanvas {
+    display: block;
+  }
+
+  .threeCanvas {
+    display: block;
+    transform: rotate(180deg);
+  }
+
+  .fourCanvas {
+    display: block;
+    transform: rotate(180deg);
+  }
+  .fiveCanvas {
+    display: block;
+  transform: rotate(180deg);
+  }
+  .sixCanvas {
+    display: block;
+    transform: rotate(180deg);
+  }
+  .sevenCanvas {
+    display: block;
+  }
+  .eightCanvas {
+    display: block;
+  }
+
+
+  .tenCanvas {
+    display: block;
+    transform: rotate(180deg);
+
+  }
+  .nineCanvas {
+    display: block;
+
+  }
+  .elevenCanvas {
+    display: block;
+
+  }
+  .twelveCanvas {
+    display: block;
+    transform: rotate(180deg);
+
+  }
+}
